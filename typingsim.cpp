@@ -8,7 +8,7 @@ int main() {
     int points = 0;
     while (true)
     {
-        cout << "\n\n\n type ANYTHING \n(remember to find all the letter comboes like abcd)\n\n";
+        cout << "\n\n\n type ANYTHING \n(remember to find all the letter comboes like abcd)\ntype [exit] to quit\n\n";
         string anything;
         cin >> anything;
         cout << "you typed: " + anything;
@@ -44,6 +44,11 @@ int main() {
             cout << "\nWOW, a whole wasd combo!!!";
             cout << "+10 points\n";
             points = points + 10;
+        }
+        else if (anything == "exit"){
+            exit;
+
+
         }
 
         
