@@ -46,7 +46,7 @@ int main() {
             points = points + 10;
         }
         else if (anything == "exit"){
-            exit;
+            exit(1);
 
 
         }
