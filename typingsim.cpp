@@ -15,7 +15,7 @@ int main() {
         points = points + 1;
         cout << "\n you have ";
         cout << points;
-        cout << " points";
+        cout << " points\n";
         if (anything == "abcd"){
             cout << "WOW, a whole abcd combo!!!";
             cout << "+10 points";
