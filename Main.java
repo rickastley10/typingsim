@@ -15,7 +15,7 @@ public class Main {
             points = points + 1;
             System.out.print("\n you have ");
             System.out.print(points);
-            System.out.print(" points");
+            System.out.print(" points \n");
             
             if (anything.equals("abcd")) {
                 System.out.print("WOW, a whole abcd combo!!!");
