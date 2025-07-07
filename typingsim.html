@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Typing Simulator</title>
+</head>
+<body>
+<script>
+    let points = 0;
+    let output = "a simple game\nthe best game in the world!!!\na TYPING SIMULATOR!!!!";
+
+    function gameLoop() {
+        const userInput = prompt(output + "\n\n\nType ANYTHING \n(remember to find combos like abcd)\nType [exit] to quit\n\nPoints: " + points);
+        
+        if (userInput === null || userInput === "exit") return;
+        
+        points += 1;
+        output = "You typed: " + userInput + "\nPoints: " + points;
+        
+        if (userInput === "abcd") {
+            output += "\nWOW, a whole abcd combo!!!\n+10 points";
+            points += 10;
+        }
+        else if (userInput === "wxyz") {
+            output += "\nWOW, a whole wxyz combo!!!\n+10 points";
+            points += 10;
+        }
+        else if (userInput === "qwertyuiop") {
+            output += "\nWOW, a whole qwertyuiop combo!!!\n+30 points";
+            points += 30;
+        }
+        else if (userInput === "wasd") {
+            output += "\nWOW, a whole wasd combo!!!\n+10 points";
+            points += 10;
+        }
+        
+        gameLoop();
+    }
+
+    gameLoop();
+</script>
+</body>
+</html>
