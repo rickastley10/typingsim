@@ -28,4 +28,4 @@ while 1 == 1:
         print("+10 points\n")
         points = points + 10
     elif anything == "exit":
-        break
+        quit()
