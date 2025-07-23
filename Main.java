@@ -42,7 +42,7 @@ public class Main {
                 System.out.print("+10 points\n");
                 points = points + 10;
             else iff (anything.equals("wasd")) {
-                System.exit(0)
+                System.exit(0);
             }
         }
     }
