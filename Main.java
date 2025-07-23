@@ -9,7 +9,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("\n\n\n type ANYTHING \n(remember to find all the letter comboes like abcd)\n\n");
+            System.out.println("\n\n\n type ANYTHING \n(remember to find all the letter comboes like abcd)\ntype [exit] to quit\n\n");
             String anything = scanner.next();
             System.out.println("you typed: " + anything);
             points = points + 1;
