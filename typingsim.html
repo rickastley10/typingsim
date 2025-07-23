@@ -1,21 +1,17 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Typing Simulator</title>
-</head>
 <body>
 <script>
     let points = 0;
     let output = "a simple game\nthe best game in the world!!!\na TYPING SIMULATOR!!!!";
+    let gameloop = 1;
 
-    function gameLoop() {
+    while(gameloop === 1){
         const userInput = prompt(output + "\n\n\nType ANYTHING \n(remember to find combos like abcd)\nType [exit] to quit\n\nPoints: " + points);
-        
-        if (userInput === null || userInput === "exit") return;
-        
+
         points += 1;
         output = "You typed: " + userInput + "\nPoints: " + points;
-        
+
         if (userInput === "abcd") {
             output += "\nWOW, a whole abcd combo!!!\n+10 points";
             points += 10;
@@ -32,14 +28,9 @@
             output += "\nWOW, a whole wasd combo!!!\n+10 points";
             points += 10;
         }
-        else if (userInput === "exit) {
-            return;
+        else if (userInput === "exit") {
+            gameloop = 0;
         }
-        
-        
-    }
-    while(true){
-        gameLoop();
     }
 </script>
 </body>
